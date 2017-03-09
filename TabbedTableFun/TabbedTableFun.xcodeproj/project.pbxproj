@@ -14,6 +14,7 @@
 		84A309811E709442004CD2B3 /* FavoritesTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A309801E709442004CD2B3 /* FavoritesTableVC.swift */; };
 		84A309841E70961B004CD2B3 /* BookmarksTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A309831E70961B004CD2B3 /* BookmarksTableVC.swift */; };
 		84A309861E709653004CD2B3 /* DownloadsTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A309851E709653004CD2B3 /* DownloadsTableVC.swift */; };
+		B77947511E71BCA800DAE09A /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77947501E71BCA800DAE09A /* AppData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		84A309801E709442004CD2B3 /* FavoritesTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesTableVC.swift; sourceTree = "<group>"; };
 		84A309831E70961B004CD2B3 /* BookmarksTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookmarksTableVC.swift; sourceTree = "<group>"; };
 		84A309851E709653004CD2B3 /* DownloadsTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadsTableVC.swift; sourceTree = "<group>"; };
+		B77947501E71BCA800DAE09A /* AppData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 		84A3096D1E70731C004CD2B3 /* TabbedTableFun */ = {
 			isa = PBXGroup;
 			children = (
+				B779474F1E71BC9500DAE09A /* Model */,
 				84A3096E1E70731C004CD2B3 /* AppDelegate.swift */,
 				84A309821E709583004CD2B3 /* VC */,
 				84A309721E70731D004CD2B3 /* Main.storyboard */,
@@ -76,6 +79,14 @@
 				84A309801E709442004CD2B3 /* FavoritesTableVC.swift */,
 			);
 			name = VC;
+			sourceTree = "<group>";
+		};
+		B779474F1E71BC9500DAE09A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B77947501E71BCA800DAE09A /* AppData.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,6 +166,7 @@
 				84A309861E709653004CD2B3 /* DownloadsTableVC.swift in Sources */,
 				84A3096F1E70731C004CD2B3 /* AppDelegate.swift in Sources */,
 				84A309811E709442004CD2B3 /* FavoritesTableVC.swift in Sources */,
+				B77947511E71BCA800DAE09A /* AppData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,6 +328,7 @@
 				84A3097F1E70731D004CD2B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
