@@ -10,14 +10,15 @@ import UIKit
 
 class DownloadsTableVC: UITableViewController {
 //    var data = ["Butterflies","Cotton Candy","LOLCats","Lollipops","Love Songs","Puppy Dogs","Rainbows","Smiling Pandas","Sunshine"]
-    var data = AppData.shared.data
+//    var data = AppData.shared.data
+    let categories = AppData.shared.categories
 
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Downloads"
         
         // Sort the data array in a descending order (Z->A) 
-        data.sort(by:{$0 > $1})
+//        data.sort(by:{$0 > $1})
         
          // the long way to do the same thing
         /*
@@ -43,20 +44,27 @@ class DownloadsTableVC: UITableViewController {
     // MARK: - Table view data source
     
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
+        return categories.count
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return data.count
+        let category = categories[section]
+        let results = AppData.shared.fetchAll(category: category)
+        return results.count
     }
     
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "simpleCell", for: indexPath)
-        
-        // Configure the cell...
-        cell.textLabel!.text = data[indexPath.row]
+        let category = categories[indexPath.section]
+        let results = AppData.shared.fetchAll(category: category)
+        let item = results[indexPath.row]
+        cell.textLabel?.text = item
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return categories[section].capitalized
     }
     
     

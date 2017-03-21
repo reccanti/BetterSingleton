@@ -121,7 +121,7 @@
 				TargetAttributes = {
 					84A3096A1E70731C004CD2B3 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 3DGA8J9NK8;
+						DevelopmentTeam = MCPPMCE5C6;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -287,10 +287,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 3DGA8J9NK8;
+				DEVELOPMENT_TEAM = MCPPMCE5C6;
 				INFOPLIST_FILE = TabbedTableFun/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.sample.TabbedTableFun;
+				PRODUCT_BUNDLE_IDENTIFIER = com.reccanti.TabbedTableFun;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -300,10 +300,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 3DGA8J9NK8;
+				DEVELOPMENT_TEAM = MCPPMCE5C6;
 				INFOPLIST_FILE = TabbedTableFun/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.sample.TabbedTableFun;
+				PRODUCT_BUNDLE_IDENTIFIER = com.reccanti.TabbedTableFun;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};

@@ -10,7 +10,7 @@ import UIKit
 
 class BookmarksTableVC: UITableViewController {
 //    var data = ["Butterflies","Cotton Candy","LOLCats","Lollipops","Love Songs","Puppy Dogs","Rainbows","Smiling Pandas","Sunshine"]
-    var data = AppData.shared.data
+    var data = AppData.shared.fetchAll(category: "heroes")
     
     override func viewDidLoad() {
         super.viewDidLoad()
