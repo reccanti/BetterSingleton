@@ -10,14 +10,15 @@ import UIKit
 
 class FavoritesTableVC: UITableViewController {
 //   var data = ["Butterflies","Cotton Candy","LOLCats","Lollipops","Love Songs","Puppy Dogs","Rainbows","Smiling Pandas","Sunshine"]
-    var data = AppData.shared.data
+//    var data = AppData.shared.data
+    var data = AppData.shared.fetchAll(tag: "good")
 
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Favorites"
         
         // filter the array - "L" words only
-        data = data.filter({$0.hasPrefix("L")})
+//        data = data.filter({$0.hasPrefix("L")})
         
         // the long way to do the same thing
         /*
@@ -54,7 +55,7 @@ class FavoritesTableVC: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "simpleCell", for: indexPath)
 
         // Configure the cell...
-        cell.textLabel!.text = data[indexPath.row]
+        cell.textLabel!.text = data[indexPath.row].1
         return cell
     }
     

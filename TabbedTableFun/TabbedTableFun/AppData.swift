@@ -30,6 +30,13 @@ class AppData {
         "heroes": ["Gilgamesh", "King Arthur", "Roland", "Aragorn"]
     ]
     
+    private var data3 = [
+        (["monster", "green", "neutral"], "Hulk"),
+        (["hero", "green", "good"], "The Green Giant"),
+        (["monster", "white", "good"], "Uni the Unicorn"),
+        (["monster", "white", "neutral"], "Moby Dick")
+    ]
+    
     // returns a list of all the keys in data2
     var categories: [String] {
         return [String](data2.keys)
@@ -42,5 +49,12 @@ class AppData {
      */
     func fetchAll(category: String)->[String] {
         return data2[category] ?? [String]()
+    }
+    
+    /**
+     * fetch data based on a given tag
+     */
+    func fetchAll(tag:String)->[([String], String)] {
+        return data3.filter { $0.0.contains(tag) } 
     }
 }
